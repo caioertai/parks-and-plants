@@ -1,0 +1,11 @@
+<div class="row justify-content-center">
+  <div class="col-4">
+    
+    <%= simple_form_for [@garden, @plant] do |form| %>
+      <%= form.input :name %>
+      <%= form.input :image_url %>
+      <%= form.button :submit, class: 'btn btn-primary' %>
+    <% end %>
+  </div>
+</div>
+
