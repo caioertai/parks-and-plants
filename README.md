@@ -12,11 +12,11 @@ Onboarding:
   cd parks-and-plants-295
   bundle install
   yarn install
-  rails db:seed
+  rails db:create db:migrate db:seed
 ```
 Running the app:
 ```bash
-  rails s
+  rails s # go to http://localhost:3000/gardens/
 ```
 
 ## Additional Livecode Info and Resources
