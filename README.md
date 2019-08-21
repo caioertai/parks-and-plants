@@ -9,7 +9,6 @@ Onboarding:
 ```bash
   cd ~/code/<your_github_nickname>
   git clone git@github.com:caioertai/parks-and-plants-295.git
-  parks-and-plants-295
   cd parks-and-plants-295
   bundle install
   yarn install
