@@ -1,0 +1,12 @@
+<div class="row justify-content-center">
+  <div class="col-4">
+      <%= simple_form_for [@plant, @tagging] do |form| %>
+        <%= form.association :tag,
+                             # Include hidden!!! That's the option that removes
+                             # the blank string from the selection
+                             include_hidden: false,
+                             input_html: { multiple: true }%>
+        <%= form.button :submit, class: 'btn btn-primary' %>
+      <% end %>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="card-trip">
+  <img src="<%= plant.image_url %>" />
+  <div class="card-trip-infos">
+    <div>
+      <h2><%= plant.name %></h2>
+      <div>
+        <% plant.tags.each do |tag| %>
+          <span class="badge badge-light"><%= tag.name %></span>
+        <% end %>
+        <%= link_to 'Add tag', new_plant_tagging_path(plant), class: 'badge badge-primary' %>
+      </div>
+      <%= link_to 'Delete', plant_path(plant), method: :delete, 'data-confirm': 'Are you sure?' %>
+    </div>
+  </div>
+</div>

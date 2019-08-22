@@ -28,28 +28,14 @@ Running the app:
 As a user I can see one garden's plants
 As a user I can add a plant in a garden
 As a user I can delete a plant
+As a user I can see plants tags
+As a user I can tag plants
+As a user I can add multiple tags at once
 ```
 
 ### Front End Setup Guidelines
 
 https://github.com/lewagon/rails-stylesheets/blob/master/README.md
-
-### Seeds
-
-```ruby
-# db/seeds.rb
-Garden.destroy_all if Rails.env.development?
-
-Garden.create!(
-  name: "My Little Garden",
-  banner_url: "https://raw.githubusercontent.com/lewagon/fullstack-images/master/rails/parks-and-plants/garden_1.jpg"
-)
-
-Garden.create!(
-  name: "My Other Garden",
-  banner_url: "https://raw.githubusercontent.com/lewagon/fullstack-images/master/rails/parks-and-plants/garden_2.jpg"
-)
-```
 
 ### Le Wagon UI Toolkit
 
